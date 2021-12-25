@@ -14,14 +14,17 @@ class UserController:
         users = self.service.listar()
         users = users_schema.dump(users)
         # print()
-        return jsonify(status="OK", usuarios = users), 200
+
+        return jsonify(status="OK", usuarios=users), 200
 
     def criar(self):
         body = request.get_json()
         nome = body.get('name', None)
 
         if len(nome) < 5:
-            return jsonify(status="Failed", message= "O tamanho do nome deve ser maior que 5"), 422
+            return jsonify(
+                status="Failed",
+                message="O tamanho do nome deve ser maior que 5"), 422
 
         usuario = self.service.criar_usuario(nome)
         user = user_schema.dump(usuario)
