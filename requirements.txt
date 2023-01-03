@@ -21,7 +21,7 @@ marshmallow-sqlalchemy==0.27.0
 mysql-connector-python==8.0.27
 mysqlclient==2.1.0
 platformdirs==2.4.0
-protobuf==3.19.1
+protobuf==3.19.5
 py-moneyed==0.8.0
 pycountry==20.7.3
 pytz==2020.1
