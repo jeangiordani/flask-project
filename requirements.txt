@@ -5,7 +5,7 @@ distlib==0.3.4
 dnspython==2.1.0
 email-validator==1.1.2
 filelock==3.4.0
-Flask==2.0.2
+Flask==2.2.5
 flask-marshmallow==0.14.0
 Flask-SQLAlchemy==2.4.4
 Flask-Validator==1.4.2
